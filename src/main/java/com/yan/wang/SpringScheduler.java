@@ -14,6 +14,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class SpringScheduler {
     public static void main(String[] args) {
+        // how to run target/
+        // mvn clean package
+        // java -jar .jar
         ApplicationContext context = SpringApplication.run(AppConfig.class);
     }
 }
