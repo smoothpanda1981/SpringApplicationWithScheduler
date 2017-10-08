@@ -10,9 +10,9 @@ import org.springframework.scheduling.annotation.Scheduled;
  */
 @Configuration
 @ComponentScan(basePackages="com.yan.wang")
-@EnableScheduling
+//@EnableScheduling
 public class AppConfig {
-    @Scheduled(fixedRate=1500)
+    //@Scheduled(fixedRate=1500)
     public void doTask() {
         System.out.println("Do Task...");
     }

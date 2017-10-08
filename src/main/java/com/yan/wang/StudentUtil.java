@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class StudentUtil {
-    @Scheduled(fixedRate=2000)
+    //@Scheduled(fixedRate=2000)
     public void countStudent() throws Exception {
         System.out.println("Count Student...");
 //        URL url = new URL("https://www.bitstamp.net/api/v2/ticker/btcusd/");
