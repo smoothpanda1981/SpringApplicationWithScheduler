@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Java" />
+        <module name="SpringApplication" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Java" target="1.5" />
+      <module name="SpringApplication" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
