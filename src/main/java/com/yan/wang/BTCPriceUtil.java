@@ -17,7 +17,7 @@ import java.util.List;
 public class BTCPriceUtil {
     @Scheduled(fixedRate=3600000, initialDelay = 10000)
     public void countStudent() throws Exception {
-        System.out.println("Current price of BTC : ");
+        //System.out.println("Current price of BTC : ");
         BitstampUtils bitstampUtils = new BitstampUtils();
 			/*
 				get current price

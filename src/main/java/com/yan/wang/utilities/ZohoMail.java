@@ -34,9 +34,9 @@ public class ZohoMail {
         List<String> stringList = bitstampUtils.getAuthKeys();
 
         for (String s : stringList) {
-            if (s.contains("zohomailusername")) {
+            if (s.startsWith("zohomailusername=")) {
                 username = s.substring(17, s.length());
-            } else if (s.contains("zohomailpassword")) {
+            } else if (s.startsWith("zohomailpassword=")) {
                 password = s.substring(17, s.length());
             } else {
                 System.out.println("Not interested in");
