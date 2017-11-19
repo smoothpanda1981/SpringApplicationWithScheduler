@@ -15,7 +15,8 @@ import java.util.List;
  */
 @Service
 public class BTCPriceUtil {
-    @Scheduled(fixedRate=3600000, initialDelay = 10000)
+    //@Scheduled(fixedRate=3600000, initialDelay = 10000)
+    @Scheduled(fixedRate=2000, initialDelay = 10000)
     public void countStudent() throws Exception {
         //System.out.println("Current price of BTC : ");
         BitstampUtils bitstampUtils = new BitstampUtils();
@@ -27,9 +28,9 @@ public class BTCPriceUtil {
         //JSON from URL to Object
         Ticker ticker = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker/btcusd"), Ticker.class);
 
-        //System.out.println("last " + ticker.getLast());
+        System.out.println("last " + ticker.getLast());
 
-        ZohoMail zohoMail = new ZohoMail();
-        zohoMail.sendMail(String.valueOf(ticker.getLast()));
+//        ZohoMail zohoMail = new ZohoMail();
+//        zohoMail.sendMail(String.valueOf(ticker.getLast()));
     }
 }
