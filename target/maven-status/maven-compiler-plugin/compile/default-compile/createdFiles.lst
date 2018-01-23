@@ -2,8 +2,6 @@ com/yan/wang/utilities/ZohoMail.class
 com/yan/wang/CustomerContainer.class
 com/yan/wang/AppConfig.class
 com/yan/wang/utilities/BitstampUtils.class
-com/yan/wang/StudentUtil.class
-com/yan/wang/BTCPriceUtil.class
-com/yan/wang/dao/Ticker.class
 com/yan/wang/SpringScheduler.class
+com/yan/wang/dao/Ticker.class
 com/yan/wang/utilities/ZohoMail$1.class
