@@ -4,6 +4,7 @@ import com.yan.wang.dao.TickerHourDao;
 import com.yan.wang.entity.TickerHour;
 import com.yan.wang.service.TickerHourService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,7 +20,7 @@ public class TickerHourServiceImpl implements TickerHourService {
     @Transactional
     @Override
     public void add(TickerHour tickerHour) {
-
+        tickerHourDao.add(tickerHour);
     }
 
     @Transactional(readOnly = true)
@@ -27,4 +28,15 @@ public class TickerHourServiceImpl implements TickerHourService {
     public List<TickerHour> listTickerHour() {
         return null;
     }
+
+    @Override
+    public String getValueForTest() {
+        System.out.println("on arrive");
+        if (tickerHourDao == null) {
+            return "zut";
+        } else {
+            return tickerHourDao.getValueForTest();
+        }
+    }
+
 }

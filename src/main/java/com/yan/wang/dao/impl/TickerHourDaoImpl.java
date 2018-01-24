@@ -2,6 +2,7 @@ package com.yan.wang.dao.impl;
 
 import com.yan.wang.dao.TickerHourDao;
 import com.yan.wang.entity.TickerHour;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -16,11 +17,19 @@ public class TickerHourDaoImpl implements TickerHourDao {
 
     @Override
     public void add(TickerHour tickerHour) {
-
+        Session session = sessionFactory.openSession();
+        session.save(tickerHour);
     }
 
     @Override
     public List<TickerHour> listTickerHour() {
         return null;
     }
+
+    @Override
+    public String getValueForTest() {
+        return "Hello World";
+    }
+
+
 }

@@ -8,5 +8,5 @@ public interface TickerHourDao {
 
     void add(TickerHour tickerHour);
     List<TickerHour> listTickerHour();
-
+    String getValueForTest();
 }

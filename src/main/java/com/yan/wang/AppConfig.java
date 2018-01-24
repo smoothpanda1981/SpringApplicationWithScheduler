@@ -1,6 +1,8 @@
 package com.yan.wang;
 
 import com.yan.wang.entity.TickerHour;
+import com.yan.wang.service.TickerHourService;
+import com.yan.wang.service.impl.TickerHourServiceImpl;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -24,15 +26,19 @@ import java.util.Properties;
 @PropertySource("classpath:db.properties")
 @ComponentScan(basePackages="com.yan.wang")
 @EnableTransactionManagement
-@EnableScheduling
+//@EnableScheduling
 public class AppConfig {
 
     @Autowired
     private Environment env;
 
+    @Autowired
+    private TickerHourService tickerHourService;
+
     @Bean
     public DataSource getDataSource() {
         BasicDataSource dataSource = new BasicDataSource();
+        System.out.println(env.getProperty("db.driver"));
         dataSource.setDriverClassName(env.getProperty("db.driver"));
         dataSource.setUrl(env.getProperty("db.url"));
         dataSource.setUsername(env.getProperty("db.username"));
@@ -43,16 +49,16 @@ public class AppConfig {
 
     @Bean
     public LocalSessionFactoryBean getSessionFactory() {
-        LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
-        factoryBean.setDataSource(getDataSource());
+        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+        sessionFactory.setDataSource(getDataSource());
 
         Properties props=new Properties();
         props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
 
-        factoryBean.setHibernateProperties(props);
-        factoryBean.setAnnotatedClasses(TickerHour.class);
-        return factoryBean;
+        sessionFactory.setHibernateProperties(props);
+        sessionFactory.setAnnotatedClasses(TickerHour.class);
+        return sessionFactory;
     }
 
     @Bean
@@ -62,8 +68,14 @@ public class AppConfig {
         return transactionManager;
     }
 
-    @Scheduled(fixedRate=5000)
-    public void doTask() {
-        System.out.println("Do Task...");
-    }
+//    @Scheduled(fixedRate=5000)
+//    public void doTask() {
+//        System.out.println("Do Task...");
+//        if (tickerHourService == null) {
+//            System.out.println("null");
+//        } else {
+//            System.out.println("not null");
+//            tickerHourService.getValueForTest();
+//        }
+//    }
 }
