@@ -36,7 +36,7 @@ public class SpringScheduler {
         tHS = tickerHourService;
     }
 
-    @Scheduled(fixedRate = 180000, initialDelay = 3000)
+    @Scheduled(fixedRate = 1800000, initialDelay = 3000)
     public void getPriceAndVolume () {
         if (tHS != null) {
             System.out.println(tHS.getValueForTest());
@@ -45,9 +45,6 @@ public class SpringScheduler {
 
             try {
                 TickerHour tickerHour = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/btcusd/"), TickerHour.class);
-                System.out.println("Timestamp : " + tickerHour.getTimestamp());
-                System.out.println("Last : " + tickerHour.getLast());
-                System.out.println("Volume : " + tickerHour.getVolume());
                 tHS.add(tickerHour);
             } catch (IOException e) {
                 e.printStackTrace();

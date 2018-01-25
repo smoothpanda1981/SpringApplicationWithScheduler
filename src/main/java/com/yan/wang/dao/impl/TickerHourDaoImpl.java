@@ -19,6 +19,7 @@ public class TickerHourDaoImpl implements TickerHourDao {
     public void add(TickerHour tickerHour) {
         Session session = sessionFactory.openSession();
         session.save(tickerHour);
+        session.close();
     }
 
     @Override
