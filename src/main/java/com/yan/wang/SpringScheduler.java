@@ -36,7 +36,7 @@ public class SpringScheduler {
         tHS = tickerHourService;
     }
 
-    @Scheduled(fixedRate = 3000)
+    @Scheduled(fixedRate = 180000, initialDelay = 3000)
     public void getPriceAndVolume () {
         if (tHS != null) {
             System.out.println(tHS.getValueForTest());
@@ -48,16 +48,6 @@ public class SpringScheduler {
                 System.out.println("Timestamp : " + tickerHour.getTimestamp());
                 System.out.println("Last : " + tickerHour.getLast());
                 System.out.println("Volume : " + tickerHour.getVolume());
-                tickerHour.setAsk(10461.00);
-                tickerHour.setBid(10450.00);
-                tickerHour.setHigh(10461.97);
-                tickerHour.setLast(10450.00);
-                tickerHour.setLow(10230.06);
-                tickerHour.setOpen(10321.84);
-                tickerHour.setTimestamp("1516719042");
-                tickerHour.setVolume(607.74748386);
-                tickerHour.setVwap(10328.77);
-
                 tHS.add(tickerHour);
             } catch (IOException e) {
                 e.printStackTrace();
