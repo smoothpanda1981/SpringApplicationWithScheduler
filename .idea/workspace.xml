@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30aefe3a-1feb-42d9-bea4-8582c578c0ef" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourBtcUsd.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourETHUSD.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourETHUSD.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/AppConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/SpringScheduler.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/SpringScheduler.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/TickerHourDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/TickerHourDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/impl/TickerHourDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/impl/TickerHourDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourETHUSD.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourEthUsd.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yan/wang/service/impl/TickerHourServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/yan/wang/service/impl/TickerHourServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/target/SpringApplication-1.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/SpringApplication-1.0-SNAPSHOT.jar.original" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yan/wang/AppConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yan/wang/SpringScheduler.class" afterPath="$PROJECT_DIR$/target/classes/com/yan/wang/SpringScheduler.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yan/wang/dao/TickerHourDao.class" afterPath="$PROJECT_DIR$/target/classes/com/yan/wang/dao/TickerHourDao.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yan/wang/dao/impl/TickerHourDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yan/wang/service/TickerHourService.class" afterPath="$PROJECT_DIR$/target/classes/com/yan/wang/service/TickerHourService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yan/wang/service/impl/TickerHourServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/yan/wang/service/impl/TickerHourServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../HQ/target/" />
@@ -31,28 +49,18 @@
       <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-410">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="80">
+              <caret line="58" column="59" lean-forward="false" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringScheduler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SpringScheduler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/SpringScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TickerHourService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="545">
+              <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,12 +68,36 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TickerHourService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TickerHourBtcUsd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourBtcUsd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-787">
+              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TickerHourServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/service/impl/TickerHourServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,25 +105,15 @@
       <file leaf-file-name="TickerHourDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/dao/TickerHourDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="102">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TickerHourBTCUSD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourBTCUSD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TickerHourETHUSD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourETHUSD.java">
+      <file leaf-file-name="TickerHourEthUsd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourEthUsd.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
@@ -100,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TickerHourDaoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TickerHourDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/dao/impl/TickerHourDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,20 +194,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/utilities/BitstampUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/Ticker.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/StudentUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/CustomerContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/BTCPriceUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/utilities/ZohoMail.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f0284233-4896-42eb-afad-f4f36d85d44f/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/SpringScheduler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/impl/TickerHourDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/TickerHourDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/service/impl/TickerHourServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourBTCUSD.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourETHUSD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourEthUsd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourBtcUsd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/SpringScheduler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/TickerHourDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/dao/impl/TickerHourDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/service/impl/TickerHourServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yan/wang/AppConfig.java" />
       </list>
     </option>
   </component>
@@ -464,7 +488,7 @@
       <updated>1507473110737</updated>
       <workItem from="1507473114331" duration="6053000" />
       <workItem from="1507937639024" duration="72000" />
-      <workItem from="1516825498502" duration="8569000" />
+      <workItem from="1516825498502" duration="9810000" />
     </task>
     <task id="LOCAL-00001" summary="Add bitstamp job">
       <created>1507477925031</created>
@@ -508,11 +532,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517127907465</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix renaming issue">
+      <created>1517128186688</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1517128186688</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14694000" />
+    <option name="totallyTimeSpent" value="15935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1920" height="1016" extended-state="6" />
@@ -565,7 +596,9 @@
     <MESSAGE value="first version" />
     <MESSAGE value="increse time rate" />
     <MESSAGE value="split to BTC and ETH" />
-    <option name="LAST_COMMIT_MESSAGE" value="split to BTC and ETH" />
+    <MESSAGE value="fix renaming issue" />
+    <MESSAGE value="reload TickerHourBtcUsd" />
+    <option name="LAST_COMMIT_MESSAGE" value="reload TickerHourBtcUsd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -618,7 +651,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -714,7 +749,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -845,14 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -869,41 +898,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/dao/TickerHourDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/service/impl/TickerHourServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourBTCUSD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourETHUSD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourEthUsd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
@@ -911,18 +906,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/SpringScheduler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/entity/TickerHourBtcUsd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+        <state relative-caret-position="-787">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/service/TickerHourService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/dao/TickerHourDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/dao/impl/TickerHourDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/service/impl/TickerHourServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="58" column="59" lean-forward="false" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yan/wang/SpringScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
