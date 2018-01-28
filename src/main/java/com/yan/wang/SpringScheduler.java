@@ -32,7 +32,7 @@ public class SpringScheduler {
         tHS = tickerHourService;
     }
 
-    @Scheduled(fixedRate = 1800000, initialDelay = 3000)
+    @Scheduled(fixedRate = 900000, initialDelay = 3000)
     public void getPriceAndVolume () {
         if (tHS != null) {
             System.out.println(tHS.getValueForTest());
