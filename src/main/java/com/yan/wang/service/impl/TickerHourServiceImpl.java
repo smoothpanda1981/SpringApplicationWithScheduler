@@ -1,8 +1,7 @@
 package com.yan.wang.service.impl;
 
 import com.yan.wang.dao.TickerHourDao;
-import com.yan.wang.entity.TickerHourBtcUsd;
-import com.yan.wang.entity.TickerHourEthUsd;
+import com.yan.wang.entity.TickerHour;
 import com.yan.wang.service.TickerHourService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,19 +18,13 @@ public class TickerHourServiceImpl implements TickerHourService {
 
     @Transactional
     @Override
-    public void add(TickerHourBtcUsd tickerHour) {
-        tickerHourDao.add(tickerHour);
-    }
-
-    @Transactional
-    @Override
-    public void add(TickerHourEthUsd tickerHour) {
+    public void add(TickerHour tickerHour) {
         tickerHourDao.add(tickerHour);
     }
 
     @Transactional(readOnly = true)
     @Override
-    public List<TickerHourBtcUsd> listTickerHour() {
+    public List<TickerHour> listTickerHour() {
         return null;
     }
 

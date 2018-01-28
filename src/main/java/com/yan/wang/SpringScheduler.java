@@ -1,8 +1,7 @@
 package com.yan.wang;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yan.wang.entity.TickerHourBtcUsd;
-import com.yan.wang.entity.TickerHourEthUsd;
+import com.yan.wang.entity.TickerHour;
 import com.yan.wang.service.TickerHourService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -41,8 +40,10 @@ public class SpringScheduler {
             ObjectMapper mapper = new ObjectMapper();
 
             try {
-                TickerHourBtcUsd tickerHourBtcUsd = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/btcusd/"), TickerHourBtcUsd.class);
-                TickerHourEthUsd tickerHourEthUsd = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/ethusd/"), TickerHourEthUsd.class);
+                TickerHour tickerHourBtcUsd = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/btcusd/"), TickerHour.class);
+                tickerHourBtcUsd.setCryptoCurrency("BTC");
+                TickerHour tickerHourEthUsd = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/ethusd/"), TickerHour.class);
+                tickerHourEthUsd.setCryptoCurrency("ETH");
                 tHS.add(tickerHourBtcUsd);
                 tHS.add(tickerHourEthUsd);
             } catch (IOException e) {

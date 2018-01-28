@@ -1,16 +1,14 @@
 package com.yan.wang.service;
 
-import com.yan.wang.entity.TickerHourBtcUsd;
-import com.yan.wang.entity.TickerHourEthUsd;
+import com.yan.wang.entity.TickerHour;
 
 import java.util.List;
 
 
 public interface TickerHourService {
 
-    void add(TickerHourBtcUsd tickerHour);
-    void add(TickerHourEthUsd tickerHour);
-    List<TickerHourBtcUsd> listTickerHour();
+    void add(TickerHour tickerHour);
+    List<TickerHour> listTickerHour();
     String getValueForTest();
 
 }

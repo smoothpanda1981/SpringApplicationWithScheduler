@@ -1,14 +1,12 @@
 package com.yan.wang.dao;
 
-import com.yan.wang.entity.TickerHourBtcUsd;
-import com.yan.wang.entity.TickerHourEthUsd;
+import com.yan.wang.entity.TickerHour;
 
 import java.util.List;
 
 public interface TickerHourDao {
 
-    void add(TickerHourBtcUsd tickerHour);
-    void add(TickerHourEthUsd tickerHour);
-    List<TickerHourBtcUsd> listTickerHour();
+    void add(TickerHour tickerHour);
+    List<TickerHour> listTickerHour();
     String getValueForTest();
 }

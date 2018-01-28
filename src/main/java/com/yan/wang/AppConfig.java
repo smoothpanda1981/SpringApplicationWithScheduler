@@ -1,7 +1,6 @@
 package com.yan.wang;
 
-import com.yan.wang.entity.TickerHourBtcUsd;
-import com.yan.wang.entity.TickerHourEthUsd;
+import com.yan.wang.entity.TickerHour;
 import com.yan.wang.service.TickerHourService;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,8 +54,7 @@ public class AppConfig {
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
 
         sessionFactory.setHibernateProperties(props);
-        sessionFactory.setAnnotatedClasses(TickerHourBtcUsd.class);
-        sessionFactory.setAnnotatedClasses(TickerHourEthUsd.class);
+        sessionFactory.setAnnotatedClasses(new Class[] {TickerHour.class});
         return sessionFactory;
     }
 
