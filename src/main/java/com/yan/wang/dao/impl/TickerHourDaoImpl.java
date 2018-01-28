@@ -1,7 +1,8 @@
 package com.yan.wang.dao.impl;
 
 import com.yan.wang.dao.TickerHourDao;
-import com.yan.wang.entity.TickerHour;
+import com.yan.wang.entity.TickerHourBTCUSD;
+import com.yan.wang.entity.TickerHourETHUSD;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,14 +17,21 @@ public class TickerHourDaoImpl implements TickerHourDao {
     private SessionFactory sessionFactory;
 
     @Override
-    public void add(TickerHour tickerHour) {
+    public void add(TickerHourBTCUSD tickerHour) {
         Session session = sessionFactory.openSession();
         session.save(tickerHour);
         session.close();
     }
 
     @Override
-    public List<TickerHour> listTickerHour() {
+    public void add(TickerHourETHUSD tickerHour) {
+        Session session = sessionFactory.openSession();
+        session.save(tickerHour);
+        session.close();
+    }
+
+    @Override
+    public List<TickerHourBTCUSD> listTickerHour() {
         return null;
     }
 

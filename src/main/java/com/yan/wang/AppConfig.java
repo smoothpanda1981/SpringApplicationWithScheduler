@@ -1,8 +1,7 @@
 package com.yan.wang;
 
-import com.yan.wang.entity.TickerHour;
+import com.yan.wang.entity.TickerHourBTCUSD;
 import com.yan.wang.service.TickerHourService;
-import com.yan.wang.service.impl.TickerHourServiceImpl;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -12,8 +11,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -57,7 +54,7 @@ public class AppConfig {
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
 
         sessionFactory.setHibernateProperties(props);
-        sessionFactory.setAnnotatedClasses(TickerHour.class);
+        sessionFactory.setAnnotatedClasses(TickerHourBTCUSD.class);
         return sessionFactory;
     }
 

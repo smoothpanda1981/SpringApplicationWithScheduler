@@ -1,18 +1,15 @@
 package com.yan.wang;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yan.wang.entity.TickerHour;
+import com.yan.wang.entity.TickerHourBTCUSD;
+import com.yan.wang.entity.TickerHourETHUSD;
 import com.yan.wang.service.TickerHourService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.io.IOException;
 import java.net.URL;
@@ -44,8 +41,10 @@ public class SpringScheduler {
             ObjectMapper mapper = new ObjectMapper();
 
             try {
-                TickerHour tickerHour = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/btcusd/"), TickerHour.class);
-                tHS.add(tickerHour);
+                TickerHourBTCUSD tickerHourBtcUsd = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/btcusd/"), TickerHourBTCUSD.class);
+                TickerHourETHUSD tickerHourEthUsd = mapper.readValue(new URL("https://www.bitstamp.net/api/v2/ticker_hour/ethusd/"), TickerHourETHUSD.class);
+                tHS.add(tickerHourBtcUsd);
+                tHS.add(tickerHourEthUsd);
             } catch (IOException e) {
                 e.printStackTrace();
             }
