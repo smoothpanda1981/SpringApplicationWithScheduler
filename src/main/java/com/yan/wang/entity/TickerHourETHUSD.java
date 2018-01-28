@@ -3,7 +3,7 @@ package com.yan.wang.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "TICKER_HOUR_BTC_USD")
+@Table(name = "TICKER_HOUR_ETH_USD")
 public class TickerHourETHUSD {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
