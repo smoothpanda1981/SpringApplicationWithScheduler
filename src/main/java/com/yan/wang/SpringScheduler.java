@@ -12,6 +12,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 
 /**
  * Created by ywang on 15.08.17.
@@ -33,7 +34,7 @@ public class SpringScheduler {
     }
 
     @Scheduled(fixedRate = 900000, initialDelay = 3000)
-    public void getPriceAndVolume () {
+    public void getPriceAndVolume() {
         if (tHS != null) {
             System.out.println(tHS.getValueForTest());
 
@@ -51,6 +52,15 @@ public class SpringScheduler {
             }
 
 
+        }
+    }
+
+    @Scheduled(fixedRate = 912000, initialDelay = 3000)
+    public void computeCurrentTrends() {
+        if (tHS != null) {
+            System.out.println(tHS.getValueForTest());
+
+            List<TickerHour> tickerHourList = tHS.listTickerHour();
         }
     }
 }
