@@ -58,8 +58,7 @@ public class SpringScheduler {
     @Scheduled(fixedRate = 912000, initialDelay = 3000)
     public void computeAndStoreCurrentTrends() {
         if (tHS != null) {
-            System.out.println(tHS.getValueForTest());
-
+            System.out.println("computeAndStoreCurrentTrends");
             tHS.computeAndStoreCurrentTrends();
         }
     }

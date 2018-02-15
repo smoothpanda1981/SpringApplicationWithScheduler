@@ -1,6 +1,7 @@
 package com.yan.wang;
 
 import com.yan.wang.entity.TickerHour;
+import com.yan.wang.entity.TrendsTable;
 import com.yan.wang.service.TickerHourService;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +55,7 @@ public class AppConfig {
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
 
         sessionFactory.setHibernateProperties(props);
-        sessionFactory.setAnnotatedClasses(new Class[] {TickerHour.class});
+        sessionFactory.setAnnotatedClasses(new Class[] {TickerHour.class, TrendsTable.class});
         return sessionFactory;
     }
 
