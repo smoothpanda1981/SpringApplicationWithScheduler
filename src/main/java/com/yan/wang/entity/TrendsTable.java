@@ -70,7 +70,7 @@ public class TrendsTable {
 
 
     @Column(name = "TREND_ETH_VALUE")
-    private Integer trendETHValue;
+    private Integer trendEthValue;
 
     @Column(name = "TREND_ETH_VOLUME")
     private Integer trendEthVolume;
@@ -81,7 +81,7 @@ public class TrendsTable {
 
 
     @Column(name = "TREND_BTC_ETH_ALL_COMPARED")
-    private String trendBtcEthAllCompared;
+    private Integer trendBtcEthAllCompared;
 
 
     @Column(name = "EXECUTION_DATE")
@@ -223,11 +223,11 @@ public class TrendsTable {
         this.currentEthVolumeMinusThree = currentEthVolumeMinusThree;
     }
 
-    public String getTrendBtcEthAllCompared() {
+    public Integer getTrendBtcEthAllCompared() {
         return trendBtcEthAllCompared;
     }
 
-    public void setTrendBtcEthAllCompared(String trendBtcEthAllCompared) {
+    public void setTrendBtcEthAllCompared(Integer trendBtcEthAllCompared) {
         this.trendBtcEthAllCompared = trendBtcEthAllCompared;
     }
 
@@ -263,12 +263,12 @@ public class TrendsTable {
         this.trendBtcValueVolumeCombined = trendBtcValueVolumeCombined;
     }
 
-    public Integer getTrendETHValue() {
-        return trendETHValue;
+    public Integer getTrendEthValue() {
+        return trendEthValue;
     }
 
-    public void setTrendETHValue(Integer trendETHValue) {
-        this.trendETHValue = trendETHValue;
+    public void setTrendEthValue(Integer trendEthValue) {
+        this.trendEthValue = trendEthValue;
     }
 
     public Integer getTrendEthVolume() {

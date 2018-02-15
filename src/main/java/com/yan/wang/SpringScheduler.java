@@ -56,11 +56,11 @@ public class SpringScheduler {
     }
 
     @Scheduled(fixedRate = 912000, initialDelay = 3000)
-    public void computeCurrentTrends() {
+    public void computeAndStoreCurrentTrends() {
         if (tHS != null) {
             System.out.println(tHS.getValueForTest());
 
-            List<TickerHour> tickerHourList = tHS.listTickerHour();
+            tHS.computeAndStoreCurrentTrends();
         }
     }
 }

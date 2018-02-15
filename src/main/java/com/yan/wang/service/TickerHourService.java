@@ -8,7 +8,7 @@ import java.util.List;
 public interface TickerHourService {
 
     void add(TickerHour tickerHour);
-    List<TickerHour> listTickerHour();
+    void computeAndStoreCurrentTrends();
     String getValueForTest();
 
 }
